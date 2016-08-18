@@ -61,112 +61,6 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-text" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/08/18/text/" class="article-date">
-  <time datetime="2016-08-18T05:25:15.191Z" itemprop="datePublished">2016-08-18</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>&lt;!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Transitional//EN” “<a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;" target="_blank" rel="external">http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</a></p>
-<p><html xmlns="http://www.w3.org/1999/xhtml"></html></p>
-<p><head><br>  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><br>  <meta http-equiv="X-UA-Compatible" content="IE=edge"><br>  <title>tank</title><br>  <meta name="viewport" content="initial-scale=1, maximum-scale=1"><br>  <meta name="apple-mobile-web-app-capable" content="yes"><br>  <meta name="apple-mobile-web-app-status-bar-style" content="black"><br>  <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css"><br></head></p>
-<p><style></p>
-<pre><code>#zero{
-    position:absolute;
-    left:200px;
-}
-#first{
-    position:absolute;
-    left:300px;
-}
-#second{
-    position:absolute;
-    left:350px;
-}
-#third{
-    position:absolute;
-    left:450px;
-}
-</code></pre><p></style></p>
-<body><br>    <div style="text-align:center;margin-top:100px;"><br>        <span id="zero" class="fa fa-circle"></span><br>        <span id="first" class="fa fa-circle"></span><br>        <span id="second" class="fa fa-circle"></span><br>        <span id="third" class="fa fa-circle"></span><br>    </div><br></body>
-
-<p></p>
-<script>
-    //碰撞
-    function boom(obj1,obj2){
-        var t1 = obj1.offsetTop;
-        var r1 = obj1.offsetWidth+obj1.offsetLeft;
-        var b1 = obj1.offsetHeight+obj1.offsetTop;
-        var l1 = obj1.offsetLeft;
-
-        var t2 = obj2.offsetTop;
-        var r2 = obj2.offsetWidth+obj2.offsetLeft;
-        var b2 = obj2.offsetHeight+obj2.offsetTop;
-        var l2 = obj2.offsetLeft;
-
-        if(t1>b2||r1<l2||b1<t2||l1>r2){
-            return false;
-        }else{
-            return true;
-        }
-    }
-    var zero = document.getElementById('zero');
-    var first = document.getElementById('first');
-    var second = document.getElementById('second');
-    var third = document.getElementById('third');
-    var to1 = 'toLeft' , to2;
-
-    var timer = setInterval(function(event){
-        if( boom(zero,first) ){
-            to1 = 'toRight';
-        };
-        if( boom(first,second) ){
-            if( to1 == 'toRight' ){
-                to1 = '';
-                to2 = 'toRight'
-            }
-            if( to2 == 'toLeft' ){
-                to2 = '';
-                to1 = 'toLeft'
-            }
-        };
-        if( to1 == 'toLeft' ){
-            first.style.left = first.offsetLeft - 1 +'px';
-        }
-        if( to1 == 'toRight' ){
-            first.style.left = first.offsetLeft + 1 +'px';
-        }
-        //传递
-        if( boom(second,third) ){
-            to2 = 'toLeft';
-        };
-        if( to2 == 'toLeft' ){
-            second.style.left = second.offsetLeft - 1 +'px';
-        }
-        if( to2 == 'toRight' ){
-            second.style.left = second.offsetLeft + 1 +'px';
-        }
-    },5)
-</script>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/08/18/text/" data-id="cirzw18pv0002a4qqcztxhvdt" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
     <article id="post-hexo-post" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/08/18/hexo-post/" class="article-date">
@@ -197,7 +91,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/08/18/hexo-post/" data-id="cirzw18qf0004a4qqpvtlovz8" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/08/18/hexo-post/" data-id="cirzwma9k0000a0qqahzegd0d" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/博客，文章/">博客，文章</a></li></ul>
@@ -221,49 +115,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">layout: &#123; &#123; layout &#125; &#125;</div><div class="line">title: &#123; &#123; title &#125; &#125;</div><div class="line">date: &#123; &#123; date &#125; &#125;</div><div class="line">tags: hello</div><div class="line">photos:</div></pre></td></tr></table></figure>
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">1.1 安装Git</div><div class="line"></div><div class="line">1.2 安装node.js</div><div class="line"></div><div class="line">下载：http://nodejs.org/download/</div></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/08/17/postName/" data-id="cirzw18pb0000a4qqu9j8pqzp" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/08/17/hello-world/" class="article-date">
-  <time datetime="2016-08-17T01:37:54.649Z" itemprop="datePublished">2016-08-17</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/08/17/hello-world/">welcome to luyqi&#39;s blog</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p> <img src="F:\picture\4[1].jpg" alt="41"></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/08/17/hello-world/" data-id="cirzw18q50003a4qqpzy3tp9l" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/08/17/postName/" data-id="cirzwmaa50002a0qq7phhdr5d" class="article-share-link">Share</a>
       
       
     </footer>
@@ -324,19 +181,11 @@
       <ul>
         
           <li>
-            <a href="/2016/08/18/text/">(no title)</a>
-          </li>
-        
-          <li>
             <a href="/2016/08/18/hexo-post/">hexo post</a>
           </li>
         
           <li>
             <a href="/2016/08/17/postName/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2016/08/17/hello-world/">welcome to luyqi&#39;s blog</a>
           </li>
         
       </ul>
